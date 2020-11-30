@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>RESTAURANT</h2>
+
+<button onclick="myFunction()">Start</button>
+
+<p id="demo"></p>
+<p id="food"></p>
+
+
+
+
+
+<script>
+function myFunction() {
+  var txt;
+  var name = prompt("Please enter your name:");
+  if (name == null || name == "") {
+    txt = "Please insert your name to Begin";
+  } else {
+    txt = "Hello " + name + " What are you having today?";
+    
+    var food = ["Rice", "Beans", "Yam", "Fish", "Eba"];
+    document.getElementById("food").innerHTML = "We have " + food;
+    
+    
+   
+    
+  }
+  
+  
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body onload="myFunction()">
+
+<h3>RESTUARANT</h3>
+
+
+<p id="demo"></p>
+<p id="food"></p>
+
+<p>list the food item here</p>
+<input>
+
+
+<script>
+function myFunction() {
+ var txt;
+  var name = prompt("Please enter your name:");
+  if (name == null || name == "") {
+    txt = "Please insert your name to Begin";
+  } else {
+    txt = "Hello " + name + " What are you having today?";
+  }
+  
+  
+  document.getElementById("demo").innerHTML = txt;
+
+
+  var food = ["Dodo", "Rice", "Beans", "Meat"];
+  var a =
+  var b
+  var c
+  var d
+  
+  var results
+  
+  document.getElementById("food").innerHTML = "We have " + food;
+  
+  
+}
+</script>
+
+</body>
+</html>

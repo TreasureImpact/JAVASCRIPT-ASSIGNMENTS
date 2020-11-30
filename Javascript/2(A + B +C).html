@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>PROBLEM 1</h3>
+<h5>2(a+B+C)</h5>
+
+<p>Insert A</p>
+<input type="number" id="myNumber">
+
+<p>Insert B</p>
+<input type="number" id="myNumber2">
+
+<p>Insert C</p>
+<input type="number" id="myNumber3">
+
+
+<button onclick="myFunction()">Solve</button>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myNumber").value;
+  var y = document.getElementById("myNumber2").value;
+  var z = document.getElementById("myNumber3").value;
+  
+  var a = parseInt(x, 10);
+  var b = parseInt(y, 10);
+  var c = parseInt(z, 10);
+  
+  var Q = 2*(a+b+c);
+  document.getElementById("demo").innerHTML = "The Answer is " + Q;
+}
+</script>
+
+</body>
+</html>

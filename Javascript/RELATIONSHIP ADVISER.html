@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>RELATIONSHIP ADVICE FOR GIRLS</h2>
+<p>Click to get your free advice</p>
+
+<button onclick="myFunction()">Start</button>
+
+<p id="demo"></p>
+  
+<script>
+function myFunction() {
+	var text
+  	var name = prompt("What is your Name?");
+    
+  	if (name === "") {
+    	text = "Alaye, Enter your name Joor!! Mtcheeeew!!";
+    
+	} else if (name) {
+    
+    var rel = prompt("Do you have a BoyFriend? Answer Yes or No", "No");
+    
+      switch(rel) {
+    case "No":
+      text = "Dear " + name + ", you will never find love";
+      break;
+      
+    case "Yes":
+      text = "Congrats " + name + ", but he won't marry you.";
+      break;
+      
+    default:
+      text = " Alaye, answer my question joor!!";
+      
+      }
+}
+    
+  
+   document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+

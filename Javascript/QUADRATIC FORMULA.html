@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The Almighty Formula</h2>
+<h4>if ax² + bx + c</h4>
+<h3>x = (-b±√(b²-4ac))/(2a)</h3>
+
+
+<p>Insert A</p>
+<input type="number" id="myNumber">
+
+<p>Insert B</p>
+<input type="number" id="myNumber2">
+
+<p>Insert C</p>
+<input type="number" id="myNumber3">
+
+<button onclick="Solve()">Solve</button>
+
+
+<p id="demo"></p>
+
+<script>
+function Solve() {
+
+	var num1 = document.getElementById("myNumber").value;
+	var num2 = document.getElementById("myNumber2").value;
+	var num3 = document.getElementById("myNumber3").value;
+    
+    var a = parseInt(num1, 10);
+    var b = parseInt(num2, 10);
+    var c = parseInt(num3, 10);
+    
+
+	var broot = (b*b) - 4 *(a*c);
+    
+    var brootpositive = Math.abs(broot)
+	var root = Math.sqrt(brootpositive);
+
+	var aroot = 2 * a;
+    
+
+	var negX = (-b - root)/aroot;
+    var posX = (-b + root)/aroot;
+
+	document.getElementById("demo").innerHTML = "x is equal to " 
+    + negX + " and " + posX;
+    
+}
+
+
+</script>
+
+</body>
+</html>
+
+

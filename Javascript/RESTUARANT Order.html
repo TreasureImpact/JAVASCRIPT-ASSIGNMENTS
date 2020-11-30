@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html>
+<body onload="myFunction()">
+
+<h3>RESTUARANT</h3>
+
+<p id="user"></p>
+
+<h4 id="demo"></h4>
+
+<p>Type a, b,c or d to select your Order</p>
+<input id="selectedfood">
+
+<button onclick="Order()">Order</button>
+
+<p id="foods"></p>
+
+<script>
+function myFunction() {
+
+ var name = "Jessica"
+
+var food = ["A. Dodo", " B. Rice", " C. Beans", " D. Meat"];
+  document.getElementById("demo").innerHTML = "We have " + food;
+  }
+  
+  
+function Order() {
+
+
+  var a = "Dodo"
+  var b = "Rice"
+  var c = "Beans"
+  var d = "Meat"
+  
+  var chosenFood
+  
+  var foodInput = document.getElementById("selectedfood").value;
+  if (foodInput =="a"){
+  chosenFood = a
+  }
+  else if (foodInput =="b"){
+  chosenFood = b
+  }
+  else if (foodInput =="c"){
+  chosenFood = c
+  }
+  else if (foodInput =="d"){
+  chosenFood = d
+  }
+  
+  
+  
+  var results = name + " ordered " + chosenFood
+  
+  
+  document.getElementById("foods").innerHTML = results
+  
+  
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>PROBLEM 3</h3>
+<h4>AREA OF A CIRCLE</h4>
+<h5>A = π r2</h5>
+
+<p>Insert Radius</p>
+<input type="number" id="myNumber">
+
+
+
+<button onclick="myFunction()">Solve</button>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myNumber").value;
+
+  
+  
+  var π = 22/7;
+  var r = parseInt(x, 10);
+  
+  var A = π*(r*r);
+  document.getElementById("demo").innerHTML = A;
+}
+</script>
+
+</body>
+</html>
